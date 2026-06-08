@@ -5,7 +5,10 @@
       "args": [
         "-y",
         "firecrawl-mcp"
-      ]
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-2873f2d8cf84d48a5d4458fac269a0f"
+      }
     }
   }
 }
