@@ -1,5 +1,10 @@
 {
   "enabledMcpjsonServers": [
     "firecrawl"
-  ]
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp *)"
+    ]
+  }
 }
