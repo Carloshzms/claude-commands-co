@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Instala los alias y auto-pull en cualquier Mac de CAHZ
+# Instala sincronización de repos en cualquier Mac de CAHZ
 # Uso: ejecutar UNA SOLA VEZ en cada equipo nuevo
 
 REPO_DIR="/Users/carlosaugustohernandezzambrano/Library/Mobile Documents/com~apple~CloudDocs/claude-commands"
@@ -55,9 +55,18 @@ launchctl unload "$PLIST" 2>/dev/null
 launchctl load "$PLIST"
 echo "  ✓ Auto-pull al iniciar sesión activado"
 
+# 4. Ícono GUARDAR TRABAJO en el Escritorio
+cat > ~/Desktop/GUARDAR\ TRABAJO.command << 'DESKTOP'
+#!/bin/zsh
+~/guardar-repos.sh
+echo ""
+echo "Presione cualquier tecla para cerrar..."
+read -k 1
+DESKTOP
+chmod +x ~/Desktop/GUARDAR\ TRABAJO.command
+echo "  ✓ Ícono GUARDAR TRABAJO creado en el Escritorio"
+
 echo ""
 echo "Instalación completa."
-echo "Comandos disponibles:"
-echo "  jalar   → actualiza los 3 repos desde GitHub"
-echo "  guardar → sube los cambios a GitHub"
-echo "Los repos se jalaran automaticamente al encender el equipo."
+echo "  → Al encender el Mac: repos se actualizan solos"
+echo "  → Al terminar el trabajo: doble clic en GUARDAR TRABAJO del Escritorio"
