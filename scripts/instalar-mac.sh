@@ -55,7 +55,34 @@ launchctl unload "$PLIST" 2>/dev/null
 launchctl load "$PLIST"
 echo "  ✓ Auto-pull al iniciar sesión activado"
 
-# 4. Ícono GUARDAR TRABAJO en el Escritorio
+# 4. LaunchAgent: auto-guardar cada hora
+PLIST2=~/Library/LaunchAgents/com.cahz.guardarrepos.plist
+cat > "$PLIST2" << 'PLIST2_CONTENT'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.cahz.guardarrepos</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/carlosaugustohernandezzambrano/guardar-repos.sh</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>3600</integer>
+  <key>StandardOutPath</key>
+  <string>/tmp/cahz-guardarrepos.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/cahz-guardarrepos.log</string>
+</dict>
+</plist>
+PLIST2_CONTENT
+launchctl unload "$PLIST2" 2>/dev/null
+launchctl load "$PLIST2"
+echo "  ✓ Auto-guardar cada hora activado"
+
+# 5. Ícono GUARDAR TRABAJO en el Escritorio
 cat > ~/Desktop/GUARDAR\ TRABAJO.command << 'DESKTOP'
 #!/bin/zsh
 ~/guardar-repos.sh
