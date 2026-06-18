@@ -83,17 +83,18 @@ launchctl load "$PLIST2"
 echo "  ✓ Auto-guardar cada hora activado"
 
 # 5. Ícono GUARDAR TRABAJO en el Escritorio
-cat > ~/Desktop/GUARDAR\ TRABAJO.command << 'DESKTOP'
+ICONO=~/Desktop/"📤 GUARDAR TRABAJO.command"
+cat > "$ICONO" << 'DESKTOP'
 #!/bin/zsh
 ~/guardar-repos.sh
 echo ""
 echo "Presione cualquier tecla para cerrar..."
 read -k 1
 DESKTOP
-chmod +x ~/Desktop/GUARDAR\ TRABAJO.command
-echo "  ✓ Ícono GUARDAR TRABAJO creado en el Escritorio"
+chmod +x "$ICONO"
+echo "  ✓ Ícono 📤 GUARDAR TRABAJO creado en el Escritorio"
 
 echo ""
 echo "Instalación completa."
 echo "  → Al encender el Mac: repos se actualizan solos"
-echo "  → Al terminar el trabajo: doble clic en GUARDAR TRABAJO del Escritorio"
+echo "  → Al terminar el trabajo: doble clic en 📤 GUARDAR TRABAJO del Escritorio"
