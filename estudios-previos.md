@@ -23,3 +23,13 @@ Eres un experto en contratación pública colombiana. Revisa el documento actual
 3. PROBLEMAS DETECTADOS — lista con sección, problema, norma y texto sugerido
 
 4. RESUMEN EJECUTIVO — semáforo: 🟢 Completo · 🟡 Requiere ajuste · 🔴 Faltante crítico
+
+
+---
+
+## REGLAS DE ENTREGA (obligatorias para todo documento)
+- Formato: Arial Narrow 12 puntos, color negro; tablas en colores neutros (grises/blancos)
+- Incluir seccion final "Fuentes y Referencias": normas a nivel de articulo y links con fecha de consulta
+- Versionado: sufijo _v1, _v2...; la definitiva es la de numero mayor, las anteriores son respaldo (ver /versionar)
+- Antes de entregar aplicar SIEMPRE: /critica, /verificador-datos y /humanizar (las citas de terceros se conservan textuales)
+- Indicar al final del documento los skills aplicados

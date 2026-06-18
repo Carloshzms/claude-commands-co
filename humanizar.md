@@ -29,11 +29,20 @@ Reescribe el texto que te proporciono siguiendo estas reglas estrictas:
    - Preserva los números, fechas y datos específicos
    - Respeta la estructura formal del documento original
 
-4. VERIFICACIÓN FINAL:
+4. TEXTOS DE TERCEROS — INTOCABLES:
+   - Las citas textuales se conservan EXACTAS: observaciones de interesados u oferentes,
+     textos de anexos técnicos o pliegos transcritos, normas citadas entre comillas.
+   - Humanizar SOLO la redacción propia del documento (respuestas, análisis, considerandos).
+   - Si una muletilla está dentro de una cita de tercero, se deja tal cual: alterarla falsea la cita.
+   - Si el documento repite la misma fórmula de apertura en varias secciones (ej. el mismo párrafo
+     de principios en cada respuesta), variar los arranques manteniendo las citas normativas donde sustentan.
+
+5. VERIFICACIÓN FINAL:
    Antes de entregar revisa:
    - ¿Suena como lo escribió un abogado o ingeniero colombiano experimentado?
    - ¿Hay alguna frase que delate que lo escribió una IA?
    - ¿El tono es consistente de principio a fin?
+   - ¿Las citas de terceros quedaron intactas?
 
 Entrega el texto reescrito directamente sin explicaciones ni comentarios previos.
 Si el texto ya suena natural, indícalo y sugiere solo ajustes menores.

@@ -54,3 +54,13 @@ Al invocar indica: entidad de control, tipo de requerimiento y hechos.
 
 Referencia: Ley 42/1993 · Ley 610/2000 · Decreto Ley 403/2020 · 
 Ley 734/2002 · Ley 1437/2011 (CPACA) · Ley 80/1993
+
+
+---
+
+## REGLAS DE ENTREGA (obligatorias para todo documento)
+- Formato: Arial Narrow 12 puntos, color negro; tablas en colores neutros (grises/blancos)
+- Incluir seccion final "Fuentes y Referencias": normas a nivel de articulo y links con fecha de consulta
+- Versionado: sufijo _v1, _v2...; la definitiva es la de numero mayor, las anteriores son respaldo (ver /versionar)
+- Antes de entregar aplicar SIEMPRE: /critica, /verificador-datos y /humanizar (las citas de terceros se conservan textuales)
+- Indicar al final del documento los skills aplicados
