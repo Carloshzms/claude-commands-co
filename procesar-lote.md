@@ -26,15 +26,31 @@ APP_HTML  = {BASE_PKG}/PROCESAR_LOTE.html
 
 ---
 
-## Paso 1 — Identificar ZIPs pendientes
+## Paso 0 — Organizar _ENTRADA por fecha (SIEMPRE antes de buscar ZIPs)
+
+Antes de buscar ZIPs, ejecutar el script de organización para mover cualquier archivo
+suelto de la raíz de _ENTRADA/ a subcarpetas YYYY-MM-DD/:
 
 ```bash
-find "{ENTRADA}" -maxdepth 1 -name "*.zip" | sort
+python3 "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Trabajo/CONTRATACION/_SISTEMA/organizar_entrada.py"
+```
+
+Esto garantiza que la raíz quede limpia y los archivos queden clasificados por fecha de llegada.
+
+---
+
+## Paso 1 — Identificar ZIPs pendientes
+
+Buscar en la raíz Y en subcarpetas fechadas (excluir _TRAMITADOS):
+
+```bash
+find "{ENTRADA}" -maxdepth 2 -name "*.zip" ! -path "*/_TRAMITADOS/*" | sort
 ```
 
 - Si no hay ZIPs → responder "No hay ZIPs pendientes en _ENTRADA. Coloque los archivos ZIP allí y vuelva a intentarlo."
 - Si hay 1 ZIP → procesar directamente (sin overhead de agentes)
 - Si hay 2 o más → lanzar agentes en paralelo (uno por ZIP)
+- Mostrar al usuario el listado con su subcarpeta de fecha: `2026-06-23/archivo.zip`
 
 ---
 
