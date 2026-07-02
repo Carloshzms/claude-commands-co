@@ -208,7 +208,7 @@ Aplicar siempre, para que todas las hojas salgan con el mismo estilo sobrio y co
 1. **Revisar si hay dudas** — antes de redactar, identificar qué información falta o es ambigua
 2. **Preguntar al usuario** — solicitar los datos faltantes necesarios para dar consistencia al documento (objeto, valor, fechas, partes, normativa aplicable, etc.)
 3. **Solo redactar cuando tenga suficiente información** — no inventar datos, no asumir sin confirmar
-4. **Si el documento requiere análisis de mercado** → usar `firecrawl-market-research` o `firecrawl-deep-research` para soportar precios y referencias con fuentes verificables
+4. **Si el documento requiere análisis de mercado** → usar las herramientas Firecrawl (MCP `mcp__firecrawl__*`: `firecrawl_search`, `firecrawl_scrape`, `firecrawl_extract`) o el skill `/verificar-mercado` para soportar precios y referencias con fuentes verificables
 5. **Aplicar skill `/critica`** — revisión adversarial para verificar coherencia, legalidad y consistencia
 6. **Aplicar skill `/verificador-datos`** — verificar coherencia y consistencia de datos, cifras, fechas y citas dentro del documento
 7. **Aplicar skill `/humanizar`** — el documento debe sonar humano, natural y profesional — no robótico ni genérico
@@ -219,7 +219,7 @@ Aplicar siempre, para que todas las hojas salgan con el mismo estilo sobrio y co
    - Estudios previos con análisis jurídico → `legal:legal-risk-assessment`
    - Verificación de contratistas/proveedores → `legal:vendor-check`
 9. **Al entregar el documento**, indicar al final qué skills se usaron en su construcción. Ejemplo:
-   > *Skills aplicados: `/estudios-previos`, `firecrawl-market-research`, `/critica`, `/humanizar`, `legal:compliance-check`*
+   > *Skills aplicados: `/estudios-previos`, `/verificar-mercado` (Firecrawl MCP), `/critica`, `/humanizar`, `legal:compliance-check`*
 
 ---
 
@@ -289,13 +289,13 @@ Aplicar siempre, para que todas las hojas salgan con el mismo estilo sobrio y co
 - `legal:triage-nda` — revisa y clasifica NDA y acuerdos de confidencialidad; útil para convenios de confidencialidad en contratos del Estado
 
 ### Investigación web y análisis de mercado
-- `firecrawl-market-research` — investigación estructurada de mercado para estudios previos
-- `firecrawl-deep-research` — investigación profunda en múltiples fuentes para análisis del sector
-- `firecrawl-agent` — agente autónomo de investigación: lanza, investiga y regresa con informe completo (más potente que deep-research para análisis complejos del sector)
-- `firecrawl-search` — búsqueda web rápida con extracción de contenido completo
-- `firecrawl-scrape` — extrae datos de páginas específicas (SECOP, ATV, proveedores)
-- `firecrawl-monitor` — monitorea páginas web y alerta cuando cambian: ideal para vigilar publicaciones nuevas en SECOP II o CCE de las entidades UBPD/SNR/HABITAT sin entrar manualmente
-- `deep-research` — investigación profunda multi-fuente con verificación adversarial de afirmaciones y reporte citado: para análisis del sector exigentes que requieren contrastar varias fuentes y respaldar cada dato con cita verificable
+> La capacidad Firecrawl vive ahora en su **MCP** (`mcp__firecrawl__*`), no como skills nombrados (los symlinks `firecrawl-*` eran dead-links y se removieron el 2026-07-01). Herramientas principales del MCP:
+- `firecrawl_search` — búsqueda web con extracción de contenido completo (tool primario de búsqueda web)
+- `firecrawl_scrape` — extrae datos de páginas específicas (SECOP, ATV, proveedores)
+- `firecrawl_extract` — extracción estructurada de datos desde una o varias URLs
+- `firecrawl_crawl` / `firecrawl_map` — recorre sitios completos y mapea su estructura
+- `firecrawl_monitor_*` — monitorea páginas y alerta cuando cambian: ideal para vigilar publicaciones nuevas en SECOP II o CCE de UBPD/SNR/HABITAT
+- `firecrawl_agent` — agente autónomo de investigación: lanza, investiga y regresa con informe completo para análisis complejos del sector
 - `/verificar-mercado` — verifica afirmaciones de mercado contra registros oficiales (ATV, partners, SECOP)
 - `novedades-ia` — digest de novedades IA filtradas para CAHZ: busca en fuentes oficiales (Anthropic docs, Claude Code), descarta lo irrelevante y reporta solo lo accionable con instrucción exacta de uso. Sin videos, sin relleno. Se ejecuta automáticamente al inicio de sesión si han pasado >5 días desde la última ejecución.
 - `novedades-otras-ia` — digest de novedades de otras plataformas IA (ChatGPT, Gemini, Copilot, Codex, etc.): complementa `novedades-ia` para cubrir el ecosistema completo de herramientas IA que usa CAHZ; útil para comparar capacidades y decidir qué plataforma usar en cada tarea
@@ -312,12 +312,9 @@ Aplicar siempre, para que todas las hojas salgan con el mismo estilo sobrio y co
 - `data:data-context-extractor` — extrae contexto estructurado de grandes volúmenes de documentos: ideal para procesar PAA, históricos de contratos y expedientes
 - `data:sql-queries` — ejecuta y analiza consultas SQL sobre datos contractuales: útil para explorar históricos de SECOP, PAA y presupuesto
 - `data:write-query` — redacta consultas de datos estructuradas para análisis contractual y presupuestal
-- `gsd-graphify` — genera gráficas y visualizaciones a partir de datos estructurados: complementa `data:create-viz` para producir ilustraciones de análisis del sector, históricos contractuales y estadísticas de supervisión en informes
 
 ### Diseño y herramientas web (dashboards e interfaces HTML)
-- `diseno-html` — aplica el sistema de diseño profesional CAHZ (azul institucional, tipografía Inter, semáforos de urgencia en paleta clara) a dashboards, herramientas web e interfaces institucionales; invocar siempre que se cree o rediseñe una página HTML
-- `frontend-design` — crea herramientas HTML interactivas nuevas (generadores de documentos, formularios institucionales) con patrones de componentes e interactividad completa
-- `open-design` — diseño visual de tableros ejecutivos, informes gráficos y presentaciones para comunicar KPIs e indicadores contractuales ante directivos
+- `diseno-html` — **skill ÚNICO y canónico de diseño** (fusiona diseno-html + frontend-design + open-design, consolidado 2026-07-01). Cubre 3 capas: (1) sistema visual CAHZ — azul institucional, tipografía Inter, semáforos de urgencia en paleta clara; (2) construcción funcional — HTML+CSS+JS, formularios, tablas, modales, KPIs, apps web; (3) decisiones visuales — dashboards, tableros de indicadores e informes ejecutivos con gráficas. Invocar siempre que se cree o rediseñe una página HTML, dashboard, formulario o visualización de datos contractuales
 - `draw-io` — genera diagramas editables en formato Draw.io para arquitecturas complejas (TOGAF/ArchiMate, más de 20 nodos) que requieren edición visual posterior
 - `mermaid-expert` — genera diagramas Mermaid (flujos, organigramas, arquitecturas TIC) para incluir directamente en PETI, estudios previos e informes técnicos
 - `claude-mem:design-is` — audita un diseño HTML/dashboard contra los 10 principios de buen diseño de Dieter Rams antes de pulirlo o rediseñarlo; genera un plan de mejora accionable
