@@ -239,6 +239,7 @@ Aplicar siempre, para que todas las hojas salgan con el mismo estilo sobrio y co
 - `/ficha-tecnica` — genera ficha técnica
 - `/observaciones` — redacta respuesta a observaciones
 - `/respuesta-entes-control` — respuestas a entes de control
+- `/resolucion` — estructura y redacta resoluciones (actos administrativos): verifica clase de resolución según el ordenamiento, competencia/delegación del firmante, sentido del acto, monta y valida el expediente (fechas, numeración, conceptos, documentos) y entrega un bosquejo con inconsistencias antes de generar el .docx
 - `/entrega-cargo` — actas e informes de entrega del cargo
 - `/plan-adquisiciones` — genera PAA
 - `/peti-alineacion` — alineación estratégica TIC

@@ -9,13 +9,24 @@ a observaciones presentadas por interesados, oferentes o veedores.
 
 0. PREGUNTAS DE ENCUADRE — antes de redactar, plantear SIEMPRE al usuario (una sola vez, agrupadas)
    y esperar respuesta. No asumir ninguno de estos parámetros por defecto sin confirmar:
-   a. FORMA / REGISTRO de la respuesta: ¿la quiere (i) técnico-jurídica —sustento técnico + fundamento
+   a. ESCENARIO / ETAPA desde la que se responde — determina el marco jurídico y el vocabulario, es la
+      primera pregunta porque cambia toda la respuesta:
+        (i)   PROCESO DE SELECCIÓN EN CURSO, etapa precontractual (estudio de mercado, proyecto de pliego
+              o pliego definitivo) → régimen precontractual; el detalle de sub-etapa se afina en el paso 1.
+        (ii)  ETAPA DE EVALUACIÓN de ofertas (observaciones al informe de evaluación, traslado del art.
+              2.2.1.1.2.2.4 D.1082/2015) → aquí se responde sobre subsanabilidad, rechazo, orden de
+              elegibilidad; NO se modifica el pliego, se resuelve sobre las ofertas.
+        (iii) CONTRATO EN EJECUCIÓN — observación/petición de un contratista o tercero sobre un contrato
+              ya suscrito → régimen contractual (Ley 80/1993, cláusulas del contrato, supervisión), NO
+              precontractual; el vocabulario es "contratista", "supervisor", "obligaciones", no "oferente".
+      Confirmar el escenario antes de seguir; si es distinto de los tres, pedir precisión.
+   b. FORMA / REGISTRO de la respuesta: ¿la quiere (i) técnico-jurídica —sustento técnico + fundamento
       normativo—, (ii) solo jurídica, o (iii) solo técnica? (Default sugerido: técnico-jurídica.)
-   b. ESTRUCTURA DEL DESARROLLO: ¿la desarrollo (i) observación por observación (ítem a ítem), o
+   c. ESTRUCTURA DEL DESARROLLO: ¿la desarrollo (i) observación por observación (ítem a ítem), o
       (ii) en un solo bloque argumentativo con hilo conductor que amarre todas las observaciones bajo
       una misma línea de defensa? Por defecto proponer el hilo conductor cuando las observaciones
       apuntan al mismo requisito o argumento; ítem a ítem cuando son temas independientes.
-   c. SENTIDO / POSTURA por cada observación (o para el conjunto): ¿la quiere (i) a favor del observante
+   d. SENTIDO / POSTURA por cada observación (o para el conjunto): ¿la quiere (i) a favor del observante
       (acoger), (ii) en contra (no acoger / mantener el requisito), o (iii) que presente las DOS opciones
       —acoger y no acoger— con sus consecuencias y CIERRE con mi recomendación de cuál es la más acorde
       a la norma o a la técnica? Si pide las dos opciones, SIEMPRE cerrar con la sugerencia razonada.
@@ -101,7 +112,9 @@ Referencia: Ley 80/1993 art. 30 · Ley 1150/2007 art. 5 · Decreto 1082/2015 art
   FORMA (técnico-jurídica/jurídica/técnica), ni la ESTRUCTURA (ítem a ítem vs. bloque con hilo conductor),
   ni el SENTIDO (a favor/en contra/ambas opciones con recomendación), y no exigía validar sentencias,
   normas vigentes ni conceptos de Colombia Compra Eficiente, ni notas al pie para las citas. *Regla en
-  adelante:* correr el paso 0 (PREGUNTAS DE ENCUADRE) antes de redactar; validación jurídica obligatoria
+  adelante:* correr el paso 0 (PREGUNTAS DE ENCUADRE) antes de redactar — incluida la identificación del
+  ESCENARIO/ETAPA (proceso en curso precontractual · etapa de evaluación · contrato en ejecución), que
+  cambia el régimen aplicable y el vocabulario; validación jurídica obligatoria
   (sentencias vigentes + normas vigentes a nivel de artículo + conceptos CCE aplicables) antes de fijar
   posición; cuando se pidan las dos opciones, cerrar SIEMPRE con la SUGERENCIA DEL ESTRUCTURADOR razonada;
   y anclar toda cita de norma/sentencia/concepto CCE con nota al pie real en el .docx.
