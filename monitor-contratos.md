@@ -1,3 +1,8 @@
+---
+description: >-
+  Gestión de paquetes contractuales bajo seguimiento diario. Activa, desactiva o consulta el estado de los paquetes de contratación monitoreados. Invocar con 'monitorea este paquete', 'estado del monitoreo de contratos', 'desactiva el monitoreo de X'.
+---
+
 # monitor-contratos — Gestión de paquetes contractuales bajo seguimiento
 
 Activa, desactiva o consulta el estado de los paquetes de contratación que están siendo monitoreados diariamente.

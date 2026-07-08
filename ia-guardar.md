@@ -1,3 +1,8 @@
+---
+description: >-
+  Validador de destino para archivos de configuración IA. Invocar ANTES de crear o guardar cualquier archivo relacionado con IA, Claude Code o configuración del sistema, para determinar la ruta correcta y garantizar que nada quede en carpetas equivocadas.
+---
+
 # ia-guardar — Validador de destino para archivos de configuración IA
 
 Antes de crear o guardar cualquier archivo relacionado con IA, Claude Code o configuración del sistema, aplica este skill para determinar la ruta correcta en iCloud y garantizar que nada quede en carpetas locales.

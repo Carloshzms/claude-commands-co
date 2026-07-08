@@ -1,3 +1,8 @@
+---
+description: >-
+  Contexto de trabajo SNR — carga los datos de la Superintendencia de Notariado y Registro: naturaleza, régimen contractual (Ley 80/1993, Ley 1150/2007, Decreto 1082/2015) y normativa sectorial (Ley 1579/2012, Decreto-Ley 960/1970). Invocar al iniciar cualquier tarea para SNR.
+---
+
 # Contexto de trabajo SNR
 
 Estamos trabajando con la **Superintendencia de Notariado y Registro (SNR)**.

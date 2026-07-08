@@ -1,3 +1,8 @@
+---
+description: >-
+  Contexto de trabajo HABITAT — carga los datos de la Secretaría Distrital del Hábitat (SDHT) de Bogotá: naturaleza, régimen contractual (Ley 80/1993, Ley 1150/2007, Decreto 1082/2015), plataformas (SECOP II, SIDEAP) y reglas de la entidad. Invocar al iniciar cualquier tarea para HABITAT.
+---
+
 # Contexto de trabajo HABITAT
 
 Estamos trabajando con la **Secretaría Distrital del Hábitat (SDHT)** de Bogotá D.C.

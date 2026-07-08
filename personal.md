@@ -1,3 +1,8 @@
+---
+description: >-
+  Contexto de trabajo PERSONAL — asuntos personales del consultor CAHZ y clientes privados (Ingenium, consultoría TI). NO aplicar régimen de contratación estatal salvo que el entregable sea para una entidad pública. Invocar para hojas de vida, certificaciones, asuntos tributarios o trabajos de clientes privados.
+---
+
 # Contexto de trabajo PERSONAL
 
 Estamos trabajando en documentos de uso **personal** o de clientes privados.

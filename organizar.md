@@ -1,3 +1,8 @@
+---
+description: >-
+  Organizador de Descargas — revisa ~/Downloads, clasifica los documentos nuevos (pdf, docx, xlsx, pptx, zip) deduciendo la entidad (UBPD, SNR, HABITAT, PERSONAL) y los mueve a las carpetas de trabajo en iCloud. Invocar con 'organiza descargas', 'clasifica lo que llegó'.
+---
+
 # Organizador de Descargas
 
 Revisa la carpeta ~/Downloads y clasifica los documentos nuevos en las carpetas de trabajo en iCloud.

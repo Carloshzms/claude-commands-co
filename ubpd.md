@@ -1,3 +1,8 @@
+---
+description: >-
+  Contexto de trabajo UBPD — carga los datos de la Unidad de Búsqueda de Personas Dadas por Desaparecidas: naturaleza especial (Decreto-Ley 589/2017, SIVJRNR) y régimen contractual de derecho privado. Invocar al iniciar cualquier tarea para UBPD.
+---
+
 # Contexto de trabajo UBPD
 
 Estamos trabajando con la **Unidad de Búsqueda de Personas Dadas por Desaparecidas (UBPD)**.
